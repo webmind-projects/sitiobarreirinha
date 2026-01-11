@@ -68,12 +68,12 @@
         <span>Pousada Sítio Barreirinha...</span>
     </div>
 
-    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4 px-6 lg:px-12 flex justify-between items-center text-white bg-transparent">
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-2 md:py-4 px-4 md:px-12 flex justify-between items-center text-white bg-transparent">
         <div class="flex items-center gap-2">
-            <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center overflow-hidden border-2 border-brand-orange">
+            <div class="w-10 h-10 md:w-12 md:h-12 bg-white rounded-full flex items-center justify-center overflow-hidden border-2 border-brand-orange shrink-0">
                 <img src="assets/logo.png" alt="Logo" class="object-cover w-full h-full" onerror="this.src='assets/logo.png'">
             </div>
-            <span class="font-serif font-bold text-lg tracking-wider">Sítio Barreirinha</span>
+            <span class="font-serif font-bold text-sm md:text-lg tracking-wider leading-tight">Sítio<br class="block md:hidden"> Barreirinha</span>
         </div>
         
         <div class="hidden md:flex gap-8 uppercase text-sm tracking-widest font-bold">
@@ -82,32 +82,36 @@
             <a href="#localizacao" class="hover:text-brand-orange transition-colors">Localização</a>
         </div>
 
-        <a href="#reservas" class="bg-brand-orange hover:bg-orange-600 text-white px-6 py-2 rounded-full font-bold transition-all shadow-lg transform hover:-translate-y-1">
-            Reservar Agora
+        <a href="#reservas" class="bg-brand-orange hover:bg-orange-600 text-white text-xs md:text-base px-4 py-2 md:px-6 md:py-2 rounded-full font-bold transition-all shadow-lg transform hover:-translate-y-1 text-center">
+            Reservar<span class="hidden md:inline"> Agora</span>
         </a>
     </nav>
 
-    <header class="hero-bg h-screen flex items-center justify-center text-center px-4 text-white relative">
-        <div class="max-w-4xl z-10 hero-content opacity-0 translate-y-10">
-            <p class="text-brand-orange font-bold tracking-[0.3em] uppercase mb-4">Divisa RJ e SP</p>
-            <h1 class="font-serif text-5xl md:text-7xl font-bold mb-6 leading-tight">
+    <header class="hero-bg h-screen min-h-[600px] flex items-center justify-center text-center px-4 text-white relative">
+        <div class="max-w-4xl z-10 hero-content opacity-0 translate-y-10 mt-16 md:mt-0">
+            
+            <p class="text-brand-orange font-bold text-xs md:text-base tracking-[0.2em] md:tracking-[0.3em] uppercase mb-2 md:mb-4">Divisa RJ e SP</p>
+            
+            <h1 class="font-serif text-4xl sm:text-5xl md:text-7xl font-bold mb-4 md:mb-6 leading-tight">
                 A melhor pousada <br> na montanha
             </h1>
-            <p class="text-lg md:text-xl font-light mb-10 max-w-2xl mx-auto">
+            
+            <p class="text-sm sm:text-lg md:text-xl font-light mb-6 md:mb-10 max-w-xs sm:max-w-2xl mx-auto leading-snug">
                 Desconecte-se do mundo e reconecte-se com a natureza. Chalés privativos, café da manhã incluso e uma vista de tirar o fôlego.
             </p>
-            <div class="flex flex-col md:flex-row gap-4 justify-center">
-                <a href="#chales" class="border-2 border-white text-white px-8 py-3 rounded-full hover:bg-white hover:text-brand-dark transition-all font-bold">
+            
+            <div class="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center items-center">
+                <a href="#chales" class="w-full sm:w-auto border-2 border-white text-white px-6 py-2 md:px-8 md:py-3 rounded-full hover:bg-white hover:text-brand-dark transition-all font-bold text-sm md:text-base">
                     Conhecer Chalés
                 </a>
-                <a href="https://wa.me/5521999999999" target="_blank" class="bg-green-600 border-2 border-green-600 text-white px-8 py-3 rounded-full hover:bg-green-700 transition-all font-bold flex items-center justify-center gap-2">
+                <a href="https://wa.me/5521999999999" target="_blank" class="w-full sm:w-auto bg-green-600 border-2 border-green-600 text-white px-6 py-2 md:px-8 md:py-3 rounded-full hover:bg-green-700 transition-all font-bold flex items-center justify-center gap-2 text-sm md:text-base">
                     <i class="fa-brands fa-whatsapp"></i> Falar no WhatsApp
                 </a>
             </div>
         </div>
         
-        <div class="absolute bottom-10 animate-bounce">
-            <i class="fa-solid fa-chevron-down text-2xl opacity-70"></i>
+        <div class="absolute bottom-6 md:bottom-10 animate-bounce">
+            <i class="fa-solid fa-chevron-down text-xl md:text-2xl opacity-70"></i>
         </div>
     </header>
 
