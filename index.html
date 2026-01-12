@@ -35,12 +35,6 @@
     <style>
         /* Estilos personalizados */
         body { background-color: #fdfbf7; overflow-x: hidden; }
-        .hero-bg {
-            background-image: linear-gradient(rgba(15, 23, 42, 0.4), rgba(15, 23, 42, 1)), url('assets/heroimgfake.jpg'); /* Imagem genérica de montanha - TROCAR PELA FOTO DA VISTA DO CHALÉ */
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed; /* Efeito Parallax simples */
-        }
         .glass-card {
             background: rgba(255, 255, 255, 0.9);
             backdrop-filter: blur(10px);
@@ -63,6 +57,10 @@
     </style>
 </head>
 <body class="font-sans text-gray-700 antialiased">
+
+    <div class="fixed top-0 left-0 w-full h-full z-[-1]">
+        <img src="assets/heroimgfake.jpg" alt="Background" class="w-full h-full object-cover brightness-[0.6]">
+    </div>
 
     <div class="loader text-2xl">
         <span>Pousada Sítio Barreirinha...</span>
@@ -87,7 +85,7 @@
         </a>
     </nav>
 
-    <header class="hero-bg h-screen min-h-[600px] flex items-center justify-center text-center px-4 text-white relative">
+    <header class="h-screen min-h-[600px] flex items-center justify-center text-center px-4 text-white relative">
         <div class="max-w-4xl z-10 hero-content opacity-0 translate-y-10 mt-16 md:mt-0">
             
             <p class="text-brand-orange font-bold text-xs md:text-base tracking-[0.2em] md:tracking-[0.3em] uppercase mb-2 md:mb-4">Divisa RJ e SP</p>
